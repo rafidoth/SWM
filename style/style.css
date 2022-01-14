@@ -1,0 +1,120 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+
+:root{
+    --dark-color: #121212;
+    --poppins : 'Poppins', sans-serif;
+    --fira : 'Fira Code', monospace;
+    --play : 'Playfair Display', serif;
+}   
+body{
+    background-color: var(--dark-color);
+    flex-direction: column;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+}
+
+.head-title{
+    font-family: var(--play);
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.red{
+    color: #FF4331;
+}
+
+
+
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
+
+
+.nav-bar{
+    display: flex;
+}
+
+.swm-title{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+.swm-title img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.swm-title a{
+    color: #ffffff;
+    font-family: var(--poppins);
+    letter-spacing: 2px;
+    background: rgb(255,67,49);
+    background: linear-gradient(90deg, rgba(255,67,49,1) 0%, rgba(211,26,80,1) 100%);
+    border-radius: 70px;
+    padding: 10px 40px;
+    cursor: none;
+}
+
+.swm-speech p{
+    font-family: var(--fira);
+    font-weight: 500;
+    color: #b4b4b4;
+    font-size: 15px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CSS TOPICS
+\*------------------------------------*/
+
+
+.topics{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+}
+
+.topic-box{
+    display: flex;
+    justify-content: center;
+    border: 5px solid #b4b4b42d;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background 0.5s linear;
+}
+
+.topic{
+    font-family: var(--fira);
+    font-weight: 700;
+    font-size: 50px;
+    color: #b4b4b42d;
+    
+}
+
+.topic-box:hover{
+    background-color: #ffffff;
+}
+
+.topic-box:hover > .topic{
+    color: #121212;
+}
